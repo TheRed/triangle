@@ -42,5 +42,6 @@ describe 'Triangle' do
     expect(Triangle.new("0, 0, 0").judge).to eq "三角形じゃないです＞＜"
     expect(Triangle.new("0, 0, 1").judge).to eq "三角形じゃないです＞＜"
     expect(Triangle.new("0, 1, 1").judge).to eq "三角形じゃないです＞＜"
+    expect(Triangle.new("1, a, 三角形").judge).to eq "三角形じゃないです＞＜"
   end
 end
