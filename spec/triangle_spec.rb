@@ -2,6 +2,10 @@ require 'spec_helper'
 require File.expand_path(File.dirname(__FILE__) + '/../triangle')
 
 describe 'Triangle' do
+  # specify 'エラー処理' do
+  #   expect(Triangle.new("1, 1, 1, 1").judge).to raise_error SystemExit
+  # end
+
   specify '不等辺三角形' do
     expect(Triangle.new("2, 3, 4").judge).to eq "不等辺三角形ですね！"
     expect(Triangle.new("3, 4, 5").judge).to eq "不等辺三角形ですね！"
